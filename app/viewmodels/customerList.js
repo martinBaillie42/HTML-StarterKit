@@ -3,7 +3,7 @@
  */
 'use strict';
 define(function(require){
-    var backend = require('./backend');
+    var backend = require('./../orm/backend');
     var ko = require('knockout');
 
     return {
