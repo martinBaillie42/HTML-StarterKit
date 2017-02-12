@@ -1,4 +1,5 @@
 ﻿define(['plugins/router', 'durandal/app'], function (router, app) {
+
     return {
         router: router,
         search: function() {
@@ -9,7 +10,8 @@
         activate: function () {
             router.map([
                 { route: '', title:'Welcome', moduleId: 'viewmodels/welcome', nav: true },
-                { route: 'flickr', moduleId: 'viewmodels/flickr', nav: true }
+                { route: 'flickr', moduleId: 'viewmodels/flickr', nav: true },
+                { route: 'customerList', moduleId: 'viewmodels/customerList', nav: true }
             ]).buildNavigationModel();
             
             return router.activate();
